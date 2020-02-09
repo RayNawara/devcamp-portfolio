@@ -7,3 +7,4 @@
 <p><%= @portfolio_item.body %></p>
 
 <%= link_to "Edit", edit_portfolio_path(@portfolio_item) %>
+<%= link_to 'Destroy', portfolio_url, method: :delete, data: { confirm: 'Are you sure?' } %>
