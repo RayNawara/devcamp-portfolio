@@ -1,8 +1,9 @@
 class PortfoliosController < ApplicationController
+
   def index
     @portfolio_items = Portfolio.all
   end
-  App
+  
   def angular
     @portfolio_items = Portfolio.angular
   end
@@ -19,7 +20,6 @@ class PortfoliosController < ApplicationController
   def show
     @portfolio_item = Portfolio.find(params[:id])
   end
-  
   
   def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
