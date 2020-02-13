@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    
-    <div>
-      <div><%= link_to"Home", root_path %></div>
-      <div><%= link_to"About", about_path %></div>
-      <div><%= link_to"Contact Me", contact_path %></div>
-      <div><%= link_to"Blog", blogs_path %></div>
-      <div><%= link_to"Portfolio", portfolios_path %></div>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
+            )
+            %>
+
+          <%= render "shared/application_nav" %>
+
+          <%= yield %>
+
+          <%= render "shared/application_footer" %>
+
+          <%= alerts %>
+
+        </div>
+      </div>
     </div>
-
-    <% if current_user.class.is_a?(User) %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Register", new_user_registration_path %>
-      <%= link_to "Login", new_user_session_path %>
-    <% end %>
-  
-    <%= yield %>
-
-    <% if session[:source] %>
-      <p>Thanks for visiting me from <%= session[:source] %></p>
-    <% end %>
   </body>
 </html>
