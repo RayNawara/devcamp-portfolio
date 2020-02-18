@@ -16,4 +16,8 @@ module ApplicationHelper
     end 
   end
   
+def copyright_generator
+  MbaViewTool::Renderer.copyright 'Ray Nawara', 'All rights reserved'
+end
+
 end
