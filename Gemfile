@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+gem 'bootstrap', '~> 4.4.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -31,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -46,3 +48,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'font_awesome5_rails'
