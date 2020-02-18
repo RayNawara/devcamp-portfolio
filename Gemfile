@@ -50,3 +50,4 @@ gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'font_awesome5_rails'
 gem 'mba_view_tool', '~> 0.1.0'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
