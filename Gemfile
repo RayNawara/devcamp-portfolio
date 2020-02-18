@@ -49,4 +49,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'font_awesome5_rails'
-gem 'mba_view_tool', git: 'https://github.com/RayNawara/mba_view_tool'
+gem 'mba_view_tool', '~> 0.1.0'
