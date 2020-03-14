@@ -152,7 +152,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 48rem;
   }
 }
 
@@ -177,4 +177,9 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+.app-nav span {
+  margin-left: 11px;
+  margin-right: 11px;
 }
