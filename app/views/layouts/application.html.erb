@@ -23,7 +23,15 @@
 
         <div class="cover-container">
         
-        <div id="background"></div>
+          <%= video_tag(
+            'Hard_Drive_Videvo.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+          )
+          %>
 
           <%= render 'shared/application_nav' %>
         
