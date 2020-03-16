@@ -28,4 +28,4 @@ import "./custom";
 $(function() {
   $(".sortable").sortable();
 });
-// alert("function has run"); // optional alert to double check
+alert("function has run"); // optional alert to double check
