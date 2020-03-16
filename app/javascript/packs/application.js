@@ -7,7 +7,9 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
+
 require("jquery");
+require("jquery-ui");
 require("packs/html5sortable");
 
 import "bootstrap";
@@ -22,3 +24,8 @@ import "./custom";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+$(function() {
+  $(".sortable").sortable();
+});
+// alert("function has run"); // optional alert to double check
