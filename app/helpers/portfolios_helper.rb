@@ -1,6 +1,6 @@
 module PortfoliosHelper
   def image_generator(height:, width:)
-   "https://picsum.photos/seed/picsum/#{height}/#{width}"
+   "https://picsum.photos/id/#{rand(1..20)}/#{height}/#{width}"
   end
 
   def portfolio_img img, type
