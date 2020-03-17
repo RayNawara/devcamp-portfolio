@@ -53,3 +53,6 @@ gem 'mba_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem "nokogiri", ">= 1.10.8"
 gem 'kaminari'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.6'
+gem 'carrierwave-aws', '~> 1.0', '>= 1.0.2'
