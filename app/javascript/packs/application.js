@@ -19,6 +19,16 @@ import "@fortawesome/fontawesome-free/js/all";
 import "../stylesheets/application";
 
 import "./custom";
+
+import jQuery from "jquery";
+
+const jQueryProp = {
+  value: jQuery,
+  configurable: false,
+  writable: false
+};
+
+Object.defineProperties(window, { jQuery: jQueryProp, $: jQueryProp });
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
