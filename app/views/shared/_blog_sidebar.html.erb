@@ -5,7 +5,9 @@
 <br>
     I have changed my direction and have moved to web development. I have studied and worked with Most of the major technologies. <br> I am currently working on a large Ruby on Rails project, updating it to run with higher levels of security and restyling it to a more mordern look.</p>
   </div>
-
+    
+  <%= source_helper('alert alert-primary blog-sidebar-source') %>
+  
   <div class="sidebar-module">
     <% @side_bar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
